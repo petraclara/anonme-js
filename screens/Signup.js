@@ -49,7 +49,7 @@ const onHandleSignup = () => {
       <View style={{marginTop: 20, flexDirection: 'row', alignItems: 'center', alignSelf: 'center'}}>
         <Text style={{color: 'gray', fontWeight: '600', fontSize: 14}}>Don't have an account? </Text>
         <TouchableOpacity onPress={() => navigation.navigate("Login")}>
-          <Text style={{color: '#f57c00', fontWeight: '600', fontSize: 14}}> Log In</Text>
+          <Text style={{color: '#F3A322', fontWeight: '600', fontSize: 14}}> Log In</Text>
         </TouchableOpacity>
       </View>
       </SafeAreaView>
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 30,
   },
   button: {
-    backgroundColor: '#f57c00',
+    backgroundColor: '#26646F',
     height: 58,
     borderRadius: 10,
     justifyContent: 'center',

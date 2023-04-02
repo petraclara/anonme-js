@@ -35,7 +35,7 @@ const OnboardingScreen = () => {
           image: (
             <Image
               source={depressed}
-              className="w-64 h-64 object-contain"
+              className="w-64 h-64 rounded-full object-contain"
             />
           ),
           title: "We got you",
@@ -47,7 +47,7 @@ const OnboardingScreen = () => {
           image: (
             <Image
               source={connect}
-              className="w-64 h-64 object-contain"
+              className="w-full h-64 object-contain"
             />
           ),
           title: "We care for you",
@@ -59,12 +59,12 @@ const OnboardingScreen = () => {
           image: (
             <Image
               source={experts}
-              className="w-64 h-64 object-contain"
+              className="w-full h-64 object-scale-down"
             />
           ),
           title: "We have experts",
           subtitle:
-            "Get professional help!Connect with speciecialists in your area of problem!",
+            "Get professional help! Connect with speciecialists in your area of problem!",
         },
       ]}
     />
