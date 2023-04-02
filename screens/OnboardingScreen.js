@@ -12,12 +12,12 @@ const OnboardingScreen = () => {
     return (
       <View
         className={`w-4 h-4 mx-1 flex items-center justify-center rounded-full ${
-          selected ? "border border-red-400" : ""
+          selected ? "border border-yellow-400" : ""
         }  p-2`}
       >
         <View
           className={`w-2 h-2 ${
-            selected ? "bg-red-400" : "bg-red-200"
+            selected ? "bg-yellow-400" : "bg-yellow-200"
           } rounded-full`}
         ></View>
       </View>
@@ -31,44 +31,40 @@ const OnboardingScreen = () => {
       DotComponent={DotComponent}
       pages={[
         {
-          backgroundColor: "#fff",
+          backgroundColor: "#26646F",
           image: (
             <Image
               source={depressed}
-              className="w-72 h-72 object-contain"
+              className="w-64 h-64 object-contain"
             />
           ),
-          title: "Happy Shopping",
+          title: "We got you",
           subtitle:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptate!.",
+            "Depressed or feeling a bit down, overwhelmed and anxious",
         },
         {
-          backgroundColor: "#fff",
+          backgroundColor: "#26646F",
           image: (
             <Image
-              source={{
-                uri: "https://cdn.dribbble.com/users/1458982/screenshots/4291206/sign-in-dribble.png?compress=1&resize=400x300&vertical=top",
-              }}
-              className="w-72 h-72 object-contain"
+              source={connect}
+              className="w-64 h-64 object-contain"
             />
           ),
-          title: "All you need in One PLace",
+          title: "We care for you",
           subtitle:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptate!.",
+            "Connect with people you can relate with and create a family! Listen, share your story and save a life today!",
         },
         {
-          backgroundColor: "#fff",
+          backgroundColor: "#26646F",
           image: (
             <Image
-              source={{
-                uri: "https://thumbs.dreamstime.com/b/woman-shopping-sales-happy-young-holding-paper-bags-enjoying-126694001.jpg",
-              }}
-              className="w-72 h-72 object-contain"
+              source={experts}
+              className="w-64 h-64 object-contain"
             />
           ),
-          title: "Happy Sale, Happy Customer",
+          title: "We have experts",
           subtitle:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptate!.",
+            "Get professional help!Connect with speciecialists in your area of problem!",
         },
       ]}
     />
