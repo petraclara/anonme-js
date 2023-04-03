@@ -14,9 +14,9 @@ const Home = () => {
     navigation.setOptions({
       headerLeft: () => (
         <FontAwesome
-          name="search"
+          name="home"
           size={24}
-          color={colors.gray}
+          color={colors.primary}
           style={{ marginLeft: 15 }}
         />
       ),
@@ -38,7 +38,7 @@ const Home = () => {
     <View className="flex flex-col items-center justify-between h-full mt-2 p-3 gap-3">
       <View>
         <Text className="text-center text-2xl text-[#26646F] font-bold items-start">
-          Dealing with depression and anxiety here are some usefull groups
+          Dealing with depression and anxiety 
         </Text>
       </View>
 
